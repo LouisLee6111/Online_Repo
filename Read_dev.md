@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Nov  4 16:29:17 2024
-
-@author: UOU
-"""
-
-
 개발자 일지
 
 개발 목록
