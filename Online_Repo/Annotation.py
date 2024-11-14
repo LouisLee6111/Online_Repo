@@ -81,7 +81,7 @@ if __name__ == "__main__":
     FIleNames = os.listdir(PathNames)
     ext = 'jpg'
     FileNames = [_ for _ in FIleNames if _.endswith('jpg')]
-    
+
     if ext == 'jpg':
         segment_image(PathNames + "//000000000285.jpg")
     elif ext == 'png':
