@@ -79,6 +79,7 @@ def segment_image(image_path):
 if __name__ == "__main__":
     PathNames = r"D:\02_Lectures\2024_2nd\Lecture_Materials\SW_Dev\Project\val2017\val2017"
     FileNames = os.listdir(PathNames)
+    FileNames = [_ for _ in FileNames if _.endswith('jpg')]
     ext = 'jpg'
     if ext == 'jpg':
         segment_image(PathNames + "//000000000285.jpg")
