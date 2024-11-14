@@ -78,15 +78,9 @@ def segment_image(image_path):
 # Example usage
 if __name__ == "__main__":
     PathNames = r"D:\02_Lectures\2024_2nd\Lecture_Materials\SW_Dev\Project\val2017\val2017"
-<<<<<<< HEAD
+    FileNames = os.listdir(PathNames)
     ext = 'jpg'
-    
     if ext == 'jpg':
         segment_image(PathNames + "//000000000285.jpg")
     elif ext == 'png':
         segment_image(PathNames + "//000000000285.png")
-=======
-    FIleNames = os.listdir(PathNames)
-    FileNames = [_ for _ in FIleNames if _.endswith('jpg')]
-    segment_image(PathNames + "//000000000285.jpg")
->>>>>>> feature/for_loop
