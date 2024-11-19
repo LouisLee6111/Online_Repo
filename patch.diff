@@ -1,0 +1,35 @@
+From ee32be83397678adbef2bd16322f0d0595e6ae54 Mon Sep 17 00:00:00 2001
+From: MAILAB <louislee6111@gmail.com>
+Date: Thu, 14 Nov 2024 11:43:56 +0900
+Subject: [PATCH] code print
+
+---
+ Online_Repo/Annotation.py | 9 +++------
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+
+diff --git a/Online_Repo/Annotation.py b/Online_Repo/Annotation.py
+index 625e482..7fd1e71 100644
+--- a/Online_Repo/Annotation.py
++++ b/Online_Repo/Annotation.py
+@@ -78,15 +78,12 @@ def segment_image(image_path):
+ # Example usage
+ if __name__ == "__main__":
+     PathNames = r"D:\02_Lectures\2024_2nd\Lecture_Materials\SW_Dev\Project\val2017\val2017"
+-<<<<<<< HEAD
++    FIleNames = os.listdir(PathNames)
+     ext = 'jpg'
++    FileNames = [_ for _ in FIleNames if _.endswith('jpg')]
+     
+     if ext == 'jpg':
+         segment_image(PathNames + "//000000000285.jpg")
+     elif ext == 'png':
+         segment_image(PathNames + "//000000000285.png")
+-=======
+-    FIleNames = os.listdir(PathNames)
+-    FileNames = [_ for _ in FIleNames if _.endswith('jpg')]
+-    segment_image(PathNames + "//000000000285.jpg")
+->>>>>>> feature/for_loop
++
+-- 
+2.47.0.windows.2
+
